@@ -222,12 +222,12 @@ header p {
   font-size: 12px;
 }
 
-/* Newsletter Section */
-.newsletter-section {
+/* Subscribe Section */
+.subscribe-section {
   background: linear-gradient(135deg, #0071C5 0%, #003D82 100%);
 }
 
-.newsletter-form {
+.subscribe-form {
   background: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 12px;
@@ -235,20 +235,29 @@ header p {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.newsletter-form .form-control {
+.subscribe-form .form-control {
   background-color: white;
   border: 2px solid #e0e0e0;
   color: #333;
   transition: border-color 0.3s ease;
 }
 
-.newsletter-form .form-control:focus {
+.subscribe-form .form-control:focus {
   background-color: white;
   border-color: #0071C5;
   box-shadow: 0 0 0 0.2rem rgba(0, 113, 197, 0.25);
 }
 
-.newsletter-form .btn-light:hover {
+
+.subscribe-form .btn-light {
+  background-color: white;
+  border: none;
+  color: #0071C5;
+  transition: all 0.3s ease;
+}
+
+
+.subscribe-form .btn-light:hover {
   background-color: #f8f9fa;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -275,7 +284,7 @@ html[dir="rtl"] .learn-more-link i {
   margin-right: 8px;
 }
 
-html[dir="rtl"] .newsletter-form {
+html[dir="rtl"] .subscribe-form {
   text-align: right;
   direction: rtl;
 }
