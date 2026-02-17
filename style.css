@@ -336,4 +336,11 @@ html[dir="rtl"] .learn-more-link i {
     font-size: 13px;
     padding: 8px 12px;
   }
+    .features-section .row {
+    flex-wrap: wrap; 
+  }
+  
+  .features-section .col-12 {
+    flex: 0 0 100%;  
+}
 }
