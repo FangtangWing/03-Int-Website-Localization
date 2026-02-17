@@ -133,16 +133,6 @@ header p {
   background-color: #f8f9fa;
 }
 
-.features-section .row {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.features-section .col-12 {
-  flex: 1;
-  min-width: 0;
-}
-
 .section-title {
   font-size: 36px;
   font-weight: bold;
