@@ -107,7 +107,7 @@ header p {
 .card-description {
   font-size: 14px;
   line-height: 1.6;
-  color: #666;
+  color: #4a4a4a;
   max-height: 0;
   opacity: 0;
   transition: all 0.3s ease;
@@ -153,7 +153,7 @@ header p {
 
 .section-subtitle {
   text-align: center;
-  color: #666;
+  color: #595959;
   font-size: 16px;
   margin-bottom: 40px;
 }
@@ -192,7 +192,7 @@ header p {
 
 .feature-description {
   font-size: 14px;
-  color: #666;
+  color: #4a4a4a;
   line-height: 1.6;
   margin-bottom: 20px;
   flex-grow: 1;
@@ -388,5 +388,92 @@ html[dir="rtl"] .subscribe-form {
   
   .features-section .col-12 {
     flex: 0 0 100%;  
+  }
 }
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-title {
+  color: #0071C5;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #0071C5;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: #b3b3b3;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
 }
