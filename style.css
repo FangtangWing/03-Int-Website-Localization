@@ -127,6 +127,122 @@ header p {
   font-style: italic;
 }
 
+/* Features Section Styles */
+.features-section {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.features-section .row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.features-section .col-12 {
+  flex: 1;
+  min-width: 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #0071C5;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-icon-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-icon {
+  font-size: 48px;
+  color: #0071C5;
+}
+
+
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #0071C5;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.learn-more-link {
+  display: inline-block;
+  color: #0071C5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border: 2px solid #0071C5;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.learn-more-link:hover {
+  background-color: #0071C5;
+  color: white;
+  transform: translateX(5px);
+}
+
+.learn-more-link i {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+/* RTL Support */
+html[dir="rtl"] .section-title,
+html[dir="rtl"] .section-subtitle,
+html[dir="rtl"] .feature-card {
+  text-align: right;
+  direction: rtl;
+}
+
+html[dir="rtl"] .learn-more-link {
+  padding: 8px 16px;
+}
+
+html[dir="rtl"] .learn-more-link:hover {
+  transform: translateX(-5px);
+}
+
+html[dir="rtl"] .learn-more-link i {
+  margin-left: 0;
+  margin-right: 8px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 40px 15px;
@@ -184,5 +300,40 @@ header p {
   
   .timeline-hint {
     display: none;
+  }
+
+  .features-section {
+    padding: 40px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-icon {
+    font-size: 36px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+  }
+
+  .feature-description {
+    font-size: 13px;
+  }
+
+  .learn-more-link {
+    font-size: 13px;
+    padding: 8px 12px;
   }
 }
